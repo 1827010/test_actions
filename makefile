@@ -13,10 +13,10 @@ LDFLAGS = -lm
 all: $(TARGET)
 
 $(TARGET): $(OBJS) $(HEADS)
- $(CXX) $(LDFAGS) -o $@ $(OBJS)
+  $(CXX) $(LDFAGS) -o $@ $(OBJS)
  
  run: all
- @./$(TARGET)
+   @./$(TARGET)
  
  .PHONY: depend clean
  depend:
